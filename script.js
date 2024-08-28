@@ -25,7 +25,7 @@ function getHumanChoice() {
 }
 
 
-
+//function to play the game for 5 rounds
 function playGame() {
 
 
@@ -67,7 +67,7 @@ function playGame() {
         console.log(`Computer's current Score: ${computerScore}`)
 
     }
-
+// loops the game to play for 5 rounds
     do {
         humanSelection = getHumanChoice().toLowerCase();
         computerSelection = getComputerChoice();
