@@ -76,6 +76,18 @@ function playGame() {
         playRound(humanSelection,computerSelection);
     }
     while (round < 5)
+    
+    if (round = 5) {
+        if (humanScore > computerScore) {
+            console.log("Game over, you win!")
+        }
+        else if (humanScore < computerScore) {
+            console.log("Game over, you lose!")
+        }
+        else {
+            console.log("Game over, no winner")
+        }
+    }
 }
 
 playGame()
