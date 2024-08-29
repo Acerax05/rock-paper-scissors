@@ -89,4 +89,4 @@ function playGame() {
     }
 }
 
-playGame()
+window.onload = playGame()
