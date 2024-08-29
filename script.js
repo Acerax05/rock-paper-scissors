@@ -39,7 +39,6 @@ function playGame() {
 
     //function to play the round
     function playRound(humanChoice,computerChoice) {
-        console.log(computerChoice, humanChoice)
         if (humanChoice === computerChoice) {
             console.log("It's a tie!");
         } else if (humanChoice === "rock" && computerChoice === "paper" ) {
@@ -63,8 +62,8 @@ function playGame() {
         } else {
             console.log("tf just happened")
         };
-        console.log(`Your current Score: ${humanScore}`)
-        console.log(`Computer's current Score: ${computerScore}`)
+        console.log(`Your current score: ${humanScore}`)
+        console.log(`Computer's current score: ${computerScore}`)
 
     }
 // loops the game to play for 5 rounds
