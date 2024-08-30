@@ -1,3 +1,12 @@
+window.addEventListener('DOMContentLoaded', function(){
+    console.log("Game Loaded")
+    playGame()
+})
+
+
+
+
+
 // This function randomly generates 1 of 3 choices to play against
 function getComputerChoice() {
     let getNumber = Math.floor(Math.random()* 3);
@@ -76,17 +85,17 @@ function playGame() {
     }
     while (round < 5)
     
-    if (round = 5) {
-        if (humanScore > computerScore) {
-            console.log("Game over, you win!")
-        }
-        else if (humanScore < computerScore) {
-            console.log("Game over, you lose!")
-        }
-        else {
-            console.log("Game over, no winner")
-        }
+    
+    if (humanScore > computerScore) {
+        console.log("Game over, you win!")
     }
+    else if (humanScore < computerScore) {
+        console.log("Game over, you lose!")
+    }
+    else {
+        console.log("Game over, no winner")
+    }
+    
 }
 
-window.onload = playGame()
+
