@@ -86,14 +86,14 @@ rockChoice.addEventListener("click", () => {
 });
 
 
-paperChoice.addEventListener("click", () => 
+paperChoice.addEventListener("click", () => {
     humanSelection = "paper";
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
 
 });
 
-scissorsChoice.addEventListener("click", () =>{
+scissorsChoice.addEventListener("click", () => {
     humanSelection = "scissors";
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
