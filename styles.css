@@ -1,0 +1,47 @@
+body {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    vertical-align: middle;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+
+div#choiceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: stretch;
+}
+
+.button{
+    padding: 20px;
+    width: 250px;
+    font-size: 45px;
+    border-radius: 20px;
+    background-color: #57a6c8;
+    cursor: pointer;
+
+}
+
+div#resultContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 ;
+    font-size: 20px;
+}
