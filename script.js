@@ -80,15 +80,13 @@ function removeChildren() {
 
 //Event listeners that accept player choice on click and play a round
 rockChoice.addEventListener("click", () => {
-    console.log("rock was chosen");
     humanSelection = "rock";
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
 });
 
 
-paperChoice.addEventListener("click", () => {
-    console.log("paper was chosen");
+paperChoice.addEventListener("click", () => 
     humanSelection = "paper";
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
@@ -96,7 +94,6 @@ paperChoice.addEventListener("click", () => {
 });
 
 scissorsChoice.addEventListener("click", () =>{
-    console.log("scissors was chosen");
     humanSelection = "scissors";
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
