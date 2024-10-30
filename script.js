@@ -1,10 +1,21 @@
-//window.addEventListener('DOMContentLoaded', function(){
-//    console.log("Game Loaded");
-//    playGame();
-//});
+// Variables for human choice
+let rockChoice = document.querySelector(".rock");
+let paperChoice = document.querySelector(".paper");
+let scissorsChoice = document.querySelector(".scissors");
+let choiceContainer = document.querySelector("#choiceContainer")
 
 
+//variables for keeping score
+let roundElement = document.querySelector(".round")
+let outcomeElement = document.querySelector(".outcome")
+let playerScoreElement = document.querySelector(".playerScore")
+let computerScoreElement = document.querySelector(".computerScore")
 
+
+// variables that will keep track of score and round
+let humanScore = 0;
+let computerScore = 0;
+let round = 0
 
 
 // This function randomly generates 1 of 3 choices to play against
@@ -18,45 +29,6 @@ function getComputerChoice() {
         return "rock"
     }
 };
-
-
-// This function returns a human choice based off of the answer to the prompt
-//function getHumanChoice() {
-//
-//
-//    do {
-//       var choice = prompt("Rock, Paper, or Scissors?", "").toLowerCase()
-//    }
-//    while (choice != "rock" && choice != "paper" && choice != "scissors");
-//
-//   
-//   return choice
-//};
-
-
-
-
-// Variables for human choice
-
-let rockChoice = document.querySelector(".rock");
-let paperChoice = document.querySelector(".paper");
-let scissorsChoice = document.querySelector(".scissors");
-let choiceContainer = document.querySelector("#choiceContainer")
-//variables for keeping score
-
-let roundElement = document.querySelector(".round")
-let outcomeElement = document.querySelector(".outcome")
-let playerScoreElement = document.querySelector(".playerScore")
-let computerScoreElement = document.querySelector(".computerScore")
-
-
-
-// variables that will keep track of score
-let humanScore = 0;
-let computerScore = 0;
-
-let round = 0
-
 
 
 //function to play the round
@@ -97,6 +69,7 @@ function playRound(humanChoice,computerChoice) {
     };
 };
 
+//self explanatory
 function removeChildren() {
     choiceContainer.removeChild(rockChoice);
     choiceContainer.removeChild(paperChoice);
@@ -105,7 +78,7 @@ function removeChildren() {
 
 
 
-
+//Event listeners that accept player choice on click and play a round
 rockChoice.addEventListener("click", () => {
     console.log("rock was chosen");
     humanSelection = "rock";
@@ -128,30 +101,3 @@ scissorsChoice.addEventListener("click", () =>{
     computerSelection = getComputerChoice();
     playRound(humanSelection,computerSelection);
 })
-
-
-
-    
-// loops the game to play for 5 rounds
-   // do {
-   //     humanSelection = getHumanChoice().toLowerCase();
-   //     computerSelection = getComputerChoice();
-   //     round = round + 1;
-   //     console.log(`Round number: ${round}`);
-   //     playRound(humanSelection,computerSelection);
-   // }
-   // while (round < 5)
-    
-    
- //   if (humanScore > computerScore) {
- //       console.log("Game over, you win!")
- //   }
- //   else if (humanScore < computerScore) {
- //       console.log("Game over, you lose!")
- //   }
- //   else {
-  //      console.log("Game over, no winner")
- //   }
-    
-
-
